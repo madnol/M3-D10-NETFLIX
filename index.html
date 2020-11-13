@@ -2,342 +2,513 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pornhub</title>
-    <link rel="shortcut icon" href="/imgs/Netflix_icon.svg.png" />
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand ml-4" href="#">
-        <img src="imgs/logo.png" height="45" alt="" loading="lazy" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<head>
+  <title>Striveflix</title>
+  <link rel="shortcut icon" href="/imgs/Netflix_icon.svg.png" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">TV Shows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Movies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recently Added</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">My List</a>
-          </li>
-        </ul>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fas fa-search mr-2"></i>
-              User
-              <img
-                src="./imgs/user.png"
-                height="30"
-                alt=""
-                class="mx-2 rounded"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right"
-              aria-labelledby="navbarDropdown"
-            >
-              <a class="dropdown-item" href="settings.html">Settings</a>
-              <a class="dropdown-item" href="profile.html">Profile</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="jumbotron jumbotron-fluid">
-      <video autoplay muted loop>
-        <source src="videos/video.mp4" type="video/mp4" />
-      </video>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand ml-4" href="#">
+      <img src="imgs/logo.png" height="45" alt="" loading="lazy" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="container text-white">
-        <div id="fku" class="container">
-          <h1 class="display-4">La Révolution</h1>
-          <p class="lead">
-            In a reimagined history, a mysterious disease besets 18th century
-            France, culminating in a brutal clash between rebels and the
-            aristocracy.
-          </p>
-        </div>
-        <br class="my-4" />
-        <a class="btn btn-danger btn-lg" href="#" role="button">Watch now</a>
-      </div>
-      <!-- /.container -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TV Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recently Added</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My List</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-search mr-2"></i>
+            User
+            <img src="./imgs/user.png" height="30" alt="" class="mx-2 rounded" />
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="settings.html">Settings</a>
+            <a class="dropdown-item" href="profile.html">Profile</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <!-- /.jumbotron -->
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <video autoplay muted loop>
+      <source src="videos/video.mp4" type="video/mp4" />
+    </video>
 
-    <!-- Top content -->
-    <div class="ml-4">
-      <h2 style="margin-bottom: 14px; color: white">TV Shows</h2>
-      <h4 style="color: white">Movies</h4>
-      <div class="wrapper">
-        <section id="section1">
-          <a href="#section3">‹</a>
-          <div class="item">
-            <img src="imgs/1-1.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-4.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-3.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-5.jpg" />
-          </div>
-          <a href="#section3">›</a>
-        </section>
-        <section id="section2">
-          <a href="#section1">‹</a>
-          <div class="item">
-            <img src="imgs/2-1.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/2-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/2-3.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-6.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/2-4.jpg" />
-          </div>
-          <a href="#section3">›</a>
-        </section>
-
-        <section id="section3">
-          <a href="#section2">‹</a>
-          <div class="item">
-            <img src="imgs/2-5.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/2-6.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/3-1.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/3-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section1">›</a>
-        </section>
-      </div>
-      <h4 style="color: white">Food-Porns</h4>
-      <div class="wrapper">
-        <section id="section-one1">
-          <a href="#section-one3">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-one3">›</a>
-        </section>
-        <section id="section-one2">
-          <a href="#section-one1">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-one3">›</a>
-        </section>
-
-        <section id="section-one3">
-          <a href="#section-one2">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-one1">›</a>
-        </section>
-      </div>
-      <h4 style="color: white">Porns</h4>
-      <div class="wrapper">
-        <section id="section-two1">
-          <a href="#section-two3">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-3.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-4.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-two3">›</a>
-        </section>
-        <section id="section-two2">
-          <a href="#section-two1">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-two3">›</a>
-        </section>
-
-        <section id="section-two3">
-          <a href="#section-two2">‹</a>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <div class="item">
-            <img src="imgs/1-2.jpg" />
-          </div>
-          <a href="#section-two1">›</a>
-        </section>
-      </div>
-    </div>
-    <footer class="footer-basic-centered">
-      <div class="text-center">
-        <img src="imgs/logo.png" />
-
-        <p style="color: rgb(148, 1, 1)" class="footer-links">
-          <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">Home</a>
-
-          <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#"
-            >Pricing</a
-          >
-
-          <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">About</a>
-
-          <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">Faq</a>
-
-          <a style="color: rgb(148, 1, 1)" href="#">Contact</a>
+    <div class="container text-white">
+      <div id="fku" class="container">
+        <h1 class="display-4">La Révolution</h1>
+        <p class="lead">
+          In a reimagined history, a mysterious disease besets 18th century
+          France, culminating in a brutal clash between rebels and the
+          aristocracy.
         </p>
-
-        <p class="footer-company-name">Striveflix © 2077</p>
       </div>
-    </footer>
+      <br class="my-4" />
+      <a class="btn btn-danger btn-lg" href="#" role="button">Watch now</a>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.jumbotron -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/script.js"></script>
-  </body>
+  <!-- Top content -->
+  <div class="ml-4">
+    <h2 style="margin-bottom: 14px; color: white" id="tvShow">TV Shows</h2>
+    <!--::::::::::::::::::::::::::H O R R O R::::::::::::::::::::::::::::::::-->
+    <h4 style="color: white">Horror</h4>
+    <div class="wrapper" id="horror">
+      <section id="section1">
+        <a href="#section3">‹</a>
+
+        <!-- <div class="item">
+          <img src="imgs/1-1.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-4.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-3.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-5.jpg" />
+        </div> -->
+        <a href="#section3">›</a>
+      </section>
+
+      <section id="section2">
+        <a href="#section1">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/2-1.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/2-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/2-3.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-6.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/2-4.jpg" />
+        </div> -->
+        <a href="#section3">›</a>
+      </section>
+
+      <section id="section3">
+        <a href="#section2">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/2-5.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/2-6.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/3-1.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/3-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section1">›</a>
+      </section>
+    </div>
+
+    <!--::::::::::::::::::::::::::A C T I O N::::::::::::::::::::::::::::::::-->
+    <h4 style="color: white">Action</h4>
+    <div class="wrapper" id="action">
+      <section id="section-one1">
+        <a href="#section-one3">‹</a>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <a href="#section-one3">›</a>
+      </section>
+      <section id="section-one2">
+        <a href="#section-one1">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section-one3">›</a>
+      </section>
+
+      <section id="section-one3">
+        <a href="#section-one2">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section-one1">›</a>
+      </section>
+    </div>
+    <!--::::::::::::::::::::::::::A D V E N T U R E::::::::::::::::::::::::::::::-->
+    <h4 style="color: white">adventure</h4>
+    <div class="wrapper" id="adventure">
+      <section id="section-two1">
+        <a href="#section-two3">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-3.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-4.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section-two3">›</a>
+      </section>
+      <section id="section-two2">
+        <a href="#section-two1">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section-two3">›</a>
+      </section>
+
+      <section id="section-two3">
+        <a href="#section-two2">‹</a>
+        <!-- <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div>
+        <div class="item">
+          <img src="imgs/1-2.jpg" />
+        </div> -->
+        <a href="#section-two1">›</a>
+      </section>
+    </div>
+  </div>
+  <footer class="footer-basic-centered">
+    <div class="text-center">
+      <img src="imgs/logo.png" />
+
+      <p style="color: rgb(148, 1, 1)" class="footer-links">
+        <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">Home</a>
+
+        <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">Pricing</a>
+
+        <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">About</a>
+
+        <a style="margin-left: 2px; color: rgb(148, 1, 1)" href="#">Faq</a>
+
+        <a style="color: rgb(148, 1, 1)" href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Striveflix © 2077</p>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    window.onload = async () => {
+      const url = "https://striveschool-api.herokuapp.com/api/movies/horror";
+      let currentEvents = document.querySelector("#currentEvents");
+
+      const urlCategory = "https://striveschool-api.herokuapp.com/api/movies/";
+
+
+      // try {
+      //   let response = await fetch(urlCategory, {
+      //     headers: {
+      //       Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiYzYyMzRiY2RlMTAwMTc2MTZhOGYiLCJpYXQiOjE2MDUwOTI5MDAsImV4cCI6MTYwNjMwMjUwMH0.vSSAEz_xytM3hrefGNp4shqeH1ATnMHe0vqTw8A5lgo",
+
+      //       "Content-Type": "application/json"
+      //     }
+      //   }); // this is getting the response from the API for a fetch request
+      //   let categories = await response.json();
+
+
+      //   console.log(categories)
+      //   let tvshow = document.querySelector("#tvShow")
+
+      //   categories.forEach((category) => {
+      //     let wrapper = document.createElement("div")
+      //     wrapper.classList.add("wrapper")
+      //     wrapper.setAttribute("id", `${category}`)
+      //     tvshow.after(wrapper)
+      //     let categoryTitle = document.createElement("h4")
+      //     categoryTitle.innerHTML = `${category}`
+      //     categoryTitle.before(wrapper)
+
+      //     tvshow.after(categoryTitle)
+
+      //     // let section = document.createElement("div")
+      //     // section1.setAttribute("id", "section1")
+      //     // let prev = document.createElement("a")
+      //     // prev.setAttribute("href", "section3")
+      //     // let front = document.createElement("a")
+      //     // prev.setAttribute("href", "section3")
+
+
+      //     for (i = 0; i < 3; i++) {
+
+      //       let section = document.createElement("div")
+      //       section.setAttribute("id", `section${[i]}`)
+      //       let prev = document.createElement("a")
+      //       let front = document.createElement("a")
+      //       section.pre(prev)
+      //       section.lastElementChild
+
+      //     }
+
+
+      //     prev.setAttribute("href", "section3")
+
+      //     prev.setAttribute("href", "section3")
+
+      //   })
+
+
+
+
+
+      // } catch {
+      //   err => {
+      //     console.log(err)
+      //   }
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      try {
+        let response = await fetch(url, {
+          headers: {
+            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiYzYyMzRiY2RlMTAwMTc2MTZhOGYiLCJpYXQiOjE2MDUwOTI5MDAsImV4cCI6MTYwNjMwMjUwMH0.vSSAEz_xytM3hrefGNp4shqeH1ATnMHe0vqTw8A5lgo",
+
+            "Content-Type": "application/json"
+          }
+        }); // this is getting the response from the API for a fetch request
+        let movies = await response.json(); // this is transforming the response in a json, asyncronous operation!
+        let horSection = document.querySelector("#horror");
+        let horArrSection1 = document.querySelector("#section1 a")
+        let horArrSection2 = document.querySelector("#section2 a")
+        let horArrSection3 = document.querySelector("#section3 a")
+        let horFirstSection = movies.slice(0, 5)
+        let horSecondSection = movies.slice(5, 10)
+        let horThirdSection = movies.slice(10, 15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+        console.log(horSecondSection)
+        // currentEvents.appendChild(row)
+
+        if (movies.length > 0) {
+
+          horFirstSection.forEach((movie) => {
+
+            let item = document.createElement("div")
+            item.innerHTML = `<div class="item">
+                          <img style ="height:192px; width:341px; object-fit: cover;" src="${movie.imageUrl}" />
+                          </div>`
+
+            horArrSection1.after(item)
+          });
+
+          horSecondSection.forEach((movie) => {
+
+            let item = document.createElement("div")
+            item.innerHTML = `<div class="item">
+              <img style ="height:192px; width:341px; object-fit: cover;" src="${movie.imageUrl}" />
+              </div>`
+
+            horArrSection2.after(item)
+          });
+
+          horThirdSection.forEach((movie) => {
+
+            let item = document.createElement("div")
+            item.innerHTML = `<div class="item">
+                                <img style ="height:192px; width:341px; object-fit: cover;" src="${movie.imageUrl}" />
+                              </div>`
+
+            horArrSection3.after(item)
+          });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        } else {
+          // currentEvents.classList.add("d-flex", "flex-column", "justify-content-center")
+          // currentEvents.innerHTML = `<h5 id="noEvents">No planned events</h5>`;
+          // let noEvents = document.querySelector("#noEvents")
+          // noEvents.classList.add("text-muted")
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+  </script>
+</body>
+
 </html>
